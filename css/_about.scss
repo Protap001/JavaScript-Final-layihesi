@@ -243,6 +243,67 @@
     }
 }
 
+.desin_dot {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-70%);
+    // &.desin_dot {
+    //     right: 0;
+    //     top: -22%;
+    //     position: absolute;
+    // }
+    li {
+        list-style: none;
+        button {
+            color: transparent;
+            padding: 0;
+            width: 12px;
+            height: 12px;
+            border: 2px solid transparent;
+            background: #fff;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            position: relative;
+            margin: 0 5px;
+            -webkit-transition: background 0.3s ease, border 0.3s ease;
+            transition: background 0.3s ease, border 0.3s ease;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: #a6a6a6;
+                -webkit-border-radius: 100%;
+                border-radius: 100%;
+                width: 6px;
+                height: 6px;
+                -webkit-transition: width 0.3s ease, background 0.3s ease;
+                transition: width 0.3s ease, background 0.3s ease;
+            }
+        }
+
+        &.slick-active {
+            button {
+                border: 2px solid #ff3837;
+
+                &:before {
+                    width: 4px;
+                    height: 4px;
+                    background: #ff3837;
+                }
+            }
+        }
+    }
+}
+
 // <!-- -------------ABOUT 2 END----------- -->
 
 // <!-- -----ABOUT 3 START----- -->
@@ -721,7 +782,14 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .car_dot {
+        left: 46%;
+        top: 95%;
+    }
+
     .abot1 {
         width: 100%;
         height: 230vh;
@@ -749,6 +817,100 @@
                 img {
                     margin-top: -45px;
                     width: 100%;
+                    height: auto;
+                }
+                .get {
+                    a {
+                        padding: 12px 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mapls {
+        padding-top: 300px !important;
+    }
+
+    .security_sistem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .col-6 {
+            width: 100%;
+        }
+        .text {
+            // width: 100%;
+
+            h4 {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+            .vek {
+                img {
+                    width: 100%;
+                }
+            }
+            .twoe {
+                margin-left: -20%;
+            }
+        }
+        .edo {
+            width: 100%;
+            // margin: auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            img {
+                // margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: 8px;
+            }
+            p {
+                margin-left: 15px;
+            }
+        }
+    }
+    .stepler {
+        width: 100%;
+        .setters {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .abot1 {
+        width: 100%;
+        height: 230vh;
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            .box1 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .cilents {
+        padding-bottom: 80px;
+    }
+    .our_video {
+        display: none;
+    }
+    .shopps {
+        padding-top: 80px;
+        // width: 100%;
+        .boots {
+            .bot1 {
+                img {
+                    margin-top: -45px;
+                    width: 100%;
+                    height: auto;
                 }
                 .get {
                     a {
@@ -759,7 +921,7 @@
         }
     }
     .mapls {
-        padding-top: 0px;
+        padding-top: 100px !important;
     }
     .car_dot {
         // position: absolute;
@@ -815,3 +977,295 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 880px) {
+    .abot1 {
+        width: 100%;
+        height: 230vh;
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            .box1 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .cilents {
+        padding-bottom: 80px;
+    }
+    .our_video {
+        display: none;
+    }
+    .shopps {
+        padding-top: 80px;
+        // width: 100%;
+        .boots {
+            .bot1 {
+                img {
+                    margin-top: -45px;
+                    width: 100%;
+                    height: auto;
+                }
+                .get {
+                    a {
+                        padding: 12px 70px;
+                    }
+                }
+            }
+        }
+    }
+    .desin_dot {
+        top: 85% !important;
+    }
+
+    .mapls {
+        padding-top: 130px !important;
+        // display: none !important;
+    }
+
+    .security_sistem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .col-6 {
+            width: 100%;
+        }
+        .text {
+            // width: 100%;
+
+            h4 {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+            .vek {
+                img {
+                    width: 100%;
+                }
+            }
+            .twoe {
+                margin-left: -20%;
+            }
+        }
+        .edo {
+            width: 100%;
+            // margin: auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            img {
+                // margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: 8px;
+            }
+            p {
+                margin-left: 15px;
+            }
+        }
+    }
+    .stepler {
+        width: 100%;
+        .setters {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 880px) and (max-width: 992px) {
+    .abot1 {
+        width: 100%;
+        height: 230vh;
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            .box1 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .cilents {
+        padding-bottom: 80px;
+    }
+    .our_video {
+        display: none;
+    }
+    .shopps {
+        padding-top: 80px;
+        // width: 100%;
+        .boots {
+            .bot1 {
+                img {
+                    margin-top: -45px;
+                    width: 100%;
+                    height: auto;
+                }
+                .get {
+                    a {
+                        padding: 12px 70px;
+                    }
+                }
+            }
+        }
+    }
+    .desin_dot {
+        top: 85% !important;
+    }
+
+    .mapls {
+        padding-top: 200px !important;
+        // display: none !important;
+    }
+
+    .security_sistem {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .col-6 {
+            width: 100%;
+        }
+        .text {
+            // width: 100%;
+
+            h4 {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+            .vek {
+                img {
+                    width: 100%;
+                }
+            }
+            .twoe {
+                margin-left: -20%;
+            }
+        }
+        .edo {
+            width: 100%;
+            // margin: auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            img {
+                // margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: 8px;
+            }
+            p {
+                margin-left: 15px;
+            }
+        }
+    }
+    .stepler {
+        width: 100%;
+        .setters {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .abot1 {
+        width: 100%;
+        height: 230vh;
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            .box1 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .cilents {
+        padding-bottom: 80px;
+    }
+
+    .shopps {
+        padding-top: 80px;
+        // width: 100%;
+        .boots {
+            .bot1 {
+                img {
+                    margin-top: -45px;
+                    width: 100%;
+                    height: auto;
+                }
+                .get {
+                    a {
+                        padding: 12px 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    .our_team{margin-top: -350px;}
+    .desin_dot {
+        top: 85% !important;
+    }
+
+    .mapls {
+        padding-top: 130px !important;
+        // display: none !important;
+    }
+
+    .security_sistem {
+        display: flex;
+        align-items: baseline;
+        width: 100%;
+        .col-6 {
+            width: 50%;
+        }
+        .text {
+            // width: 100%;
+
+            h4 {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+            .vek {
+                img {
+                    width: 100%;
+                }
+            }
+            .twoe {
+                margin-left: -20%;
+            }
+        }
+        .edo {
+            width: 100%;
+            // margin: auto;
+            // text-align: center;
+            display: flex;
+            flex-direction: column;
+            img {
+                // margin-top: 30px;
+                margin-bottom: 30px;
+                margin-left: 8px;
+            }
+            p {
+                margin-left: 15px;
+            }
+        }
+    }
+    .stepler {
+        width: 100%;
+        .setters {
+            display: flex;
+            // flex-direction: column;
+        }
+    }
+}
+

@@ -175,7 +175,7 @@
           animation-delay: 5s;
   display: block;
   margin-top: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 35px;
   font-weight: bold;
 }
@@ -665,7 +665,7 @@
   color: black;
   font-weight: bold;
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: block;
   text-align: center;
   margin-top: 28px;
@@ -1069,7 +1069,7 @@
 .models .basliq h2 {
   display: inline;
   color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
 
@@ -1082,7 +1082,7 @@
 
 .models .basliq p {
   color: #5c5c5c;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
 
@@ -1876,7 +1876,7 @@
 
 .store .tuning .left h2 {
   display: inline;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
 
@@ -1889,7 +1889,7 @@
 
 .store .tuning .right a {
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 16px;
   margin: 8px;
@@ -2026,7 +2026,7 @@
   margin-bottom: 50px;
   color: white;
   font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .newsa .ons .news .name h2 {
@@ -2101,7 +2101,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #7b7b7b;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
 }
 
@@ -5300,7 +5300,7 @@
 
 .general-part .part-1 .cardiv .rightside .right-bottom .one-bottom strong {
   font-size: 14.5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .general-part .part-2 {
@@ -7038,6 +7038,65 @@
   background: #ff3837;
 }
 
+.desin_dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-70%);
+          transform: translate(-70%);
+}
+
+.desin_dot li {
+  list-style: none;
+}
+
+.desin_dot li button {
+  color: transparent;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid transparent;
+  background: #fff;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 5px;
+  -webkit-transition: background 0.3s ease, border 0.3s ease;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.desin_dot li button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #a6a6a6;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  -webkit-transition: width 0.3s ease, background 0.3s ease;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.desin_dot li.slick-active button {
+  border: 2px solid #ff3837;
+}
+
+.desin_dot li.slick-active button:before {
+  width: 4px;
+  height: 4px;
+  background: #ff3837;
+}
+
 .cilents {
   margin-top: 280px;
   width: 100%;
@@ -7585,7 +7644,11 @@
   color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 600px) {
+  .car_dot {
+    left: 46%;
+    top: 95%;
+  }
   .abot1 {
     width: 100%;
     height: 230vh;
@@ -7616,12 +7679,108 @@
   .shopps .boots .bot1 img {
     margin-top: -45px;
     width: 100%;
+    height: auto;
   }
   .shopps .boots .bot1 .get a {
     padding: 12px 70px;
   }
   .mapls {
-    padding-top: 0px;
+    padding-top: 300px !important;
+  }
+  .security_sistem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .security_sistem .col-6 {
+    width: 100%;
+  }
+  .security_sistem .text h4 {
+    width: 100%;
+  }
+  .security_sistem .text p {
+    width: 100%;
+  }
+  .security_sistem .text .vek img {
+    width: 100%;
+  }
+  .security_sistem .text .twoe {
+    margin-left: -20%;
+  }
+  .security_sistem .edo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .security_sistem .edo img {
+    margin-bottom: 30px;
+    margin-left: 8px;
+  }
+  .security_sistem .edo p {
+    margin-left: 15px;
+  }
+  .stepler {
+    width: 100%;
+  }
+  .stepler .setters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .abot1 {
+    width: 100%;
+    height: 230vh;
+  }
+  .abot1 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .abot1 .boxes .box1 {
+    margin-bottom: 50px;
+  }
+  .cilents {
+    padding-bottom: 80px;
+  }
+  .our_video {
+    display: none;
+  }
+  .shopps {
+    padding-top: 80px;
+  }
+  .shopps .boots .bot1 img {
+    margin-top: -45px;
+    width: 100%;
+    height: auto;
+  }
+  .shopps .boots .bot1 .get a {
+    padding: 12px 70px;
+  }
+  .mapls {
+    padding-top: 100px !important;
   }
   .car_dot {
     left: 46%;
@@ -7680,6 +7839,295 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 880px) {
+  .abot1 {
+    width: 100%;
+    height: 230vh;
+  }
+  .abot1 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .abot1 .boxes .box1 {
+    margin-bottom: 50px;
+  }
+  .cilents {
+    padding-bottom: 80px;
+  }
+  .our_video {
+    display: none;
+  }
+  .shopps {
+    padding-top: 80px;
+  }
+  .shopps .boots .bot1 img {
+    margin-top: -45px;
+    width: 100%;
+    height: auto;
+  }
+  .shopps .boots .bot1 .get a {
+    padding: 12px 70px;
+  }
+  .desin_dot {
+    top: 85% !important;
+  }
+  .mapls {
+    padding-top: 130px !important;
+  }
+  .security_sistem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .security_sistem .col-6 {
+    width: 100%;
+  }
+  .security_sistem .text h4 {
+    width: 100%;
+  }
+  .security_sistem .text p {
+    width: 100%;
+  }
+  .security_sistem .text .vek img {
+    width: 100%;
+  }
+  .security_sistem .text .twoe {
+    margin-left: -20%;
+  }
+  .security_sistem .edo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .security_sistem .edo img {
+    margin-bottom: 30px;
+    margin-left: 8px;
+  }
+  .security_sistem .edo p {
+    margin-left: 15px;
+  }
+  .stepler {
+    width: 100%;
+  }
+  .stepler .setters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 880px) and (max-width: 992px) {
+  .abot1 {
+    width: 100%;
+    height: 230vh;
+  }
+  .abot1 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .abot1 .boxes .box1 {
+    margin-bottom: 50px;
+  }
+  .cilents {
+    padding-bottom: 80px;
+  }
+  .our_video {
+    display: none;
+  }
+  .shopps {
+    padding-top: 80px;
+  }
+  .shopps .boots .bot1 img {
+    margin-top: -45px;
+    width: 100%;
+    height: auto;
+  }
+  .shopps .boots .bot1 .get a {
+    padding: 12px 70px;
+  }
+  .desin_dot {
+    top: 85% !important;
+  }
+  .mapls {
+    padding-top: 200px !important;
+  }
+  .security_sistem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .security_sistem .col-6 {
+    width: 100%;
+  }
+  .security_sistem .text h4 {
+    width: 100%;
+  }
+  .security_sistem .text p {
+    width: 100%;
+  }
+  .security_sistem .text .vek img {
+    width: 100%;
+  }
+  .security_sistem .text .twoe {
+    margin-left: -20%;
+  }
+  .security_sistem .edo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .security_sistem .edo img {
+    margin-bottom: 30px;
+    margin-left: 8px;
+  }
+  .security_sistem .edo p {
+    margin-left: 15px;
+  }
+  .stepler {
+    width: 100%;
+  }
+  .stepler .setters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .abot1 {
+    width: 100%;
+    height: 230vh;
+  }
+  .abot1 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .abot1 .boxes .box1 {
+    margin-bottom: 50px;
+  }
+  .cilents {
+    padding-bottom: 80px;
+  }
+  .shopps {
+    padding-top: 80px;
+  }
+  .shopps .boots .bot1 img {
+    margin-top: -45px;
+    width: 100%;
+    height: auto;
+  }
+  .shopps .boots .bot1 .get a {
+    padding: 12px 70px;
+  }
+  .our_team {
+    margin-top: -350px;
+  }
+  .desin_dot {
+    top: 85% !important;
+  }
+  .mapls {
+    padding-top: 130px !important;
+  }
+  .security_sistem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 100%;
+  }
+  .security_sistem .col-6 {
+    width: 50%;
+  }
+  .security_sistem .text h4 {
+    width: 100%;
+  }
+  .security_sistem .text p {
+    width: 100%;
+  }
+  .security_sistem .text .vek img {
+    width: 100%;
+  }
+  .security_sistem .text .twoe {
+    margin-left: -20%;
+  }
+  .security_sistem .edo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .security_sistem .edo img {
+    margin-bottom: 30px;
+    margin-left: 8px;
+  }
+  .security_sistem .edo p {
+    margin-left: 15px;
+  }
+  .stepler {
+    width: 100%;
+  }
+  .stepler .setters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -8087,70 +8535,6 @@
 
 .quasi .quatro .quuts2 .bo6 .te2 a:hover {
   color: #ff3837;
-}
-
-@media only screen and (max-width: 1200px) {
-  .quasi {
-    width: 100%;
-  }
-  .quasi .quatro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .quasi .quatro .quuts {
-    width: 100%;
-  }
-  .quasi .quatro .quuts .quf {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .quasi .quatro .quuts .quf .qut1 {
-    width: 100%;
-    height: 100%;
-  }
-  .quasi .quatro .quuts .quf .qut2 {
-    text-align: center;
-  }
-  .quasi .quatro .quuts .quf .qut2 .tex2 p {
-    font-size: 12px;
-  }
-  .quasi .quatro .quuts .end {
-    padding-top: 35px;
-  }
-  .quasi .quatro .quuts2 {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .quasi .quatro .quuts2 .bo1 {
-    width: 100%;
-    border-radius: 0px;
-  }
-  .quasi .quatro .quuts2 .bo2 {
-    width: 100%;
-    border-radius: 0px;
-  }
-  .quasi .quatro .quuts2 .bo3 {
-    width: 100%;
-    border-radius: 0px;
-  }
-  .quasi .quatro .quuts2 .bo4 {
-    width: 100%;
-    border-radius: 0px;
-  }
-  .quasi .quatro .quuts2 .bo5 {
-    width: 100%;
-    border-radius: 0px;
-  }
-  .quasi .quatro .quuts2 .bo6 {
-    width: 100%;
-    border-radius: 0px;
-  }
 }
 
 .quasi {
@@ -8622,6 +9006,202 @@
   }
 }
 
+@media (min-width: 600px) and (max-width: 768px) {
+  .quasi {
+    width: 100%;
+  }
+  .quasi .quatro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .quasi .quatro .quuts {
+    width: 100%;
+  }
+  .quasi .quatro .quuts .quf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quasi .quatro .quuts .quf .qut1 {
+    width: 255px;
+    height: 403px;
+  }
+  .quasi .quatro .quuts .quf .qut2 {
+    width: 338px;
+    height: 404px;
+  }
+  .quasi .quatro .quuts .quf .qut2 .tex2 p {
+    font-size: 12px;
+  }
+  .quasi .quatro .quuts .end {
+    padding-top: 35px;
+  }
+  .quasi .quatro .quuts2 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .quasi .quatro .quuts2 .bo1 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo2 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo3 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo4 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo5 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo6 {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .quasi {
+    width: 100%;
+  }
+  .quasi .quatro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .quasi .quatro .quuts {
+    width: 100%;
+  }
+  .quasi .quatro .quuts .quf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quasi .quatro .quuts .quf .qut1 {
+    width: 380px;
+  }
+  .quasi .quatro .quuts .quf .qut2 .tex2 p {
+    font-size: 12px;
+  }
+  .quasi .quatro .quuts .end {
+    padding-top: 35px;
+  }
+  .quasi .quatro .quuts2 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .quasi .quatro .quuts2 .bo1 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo2 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo3 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo4 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo5 {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .quasi .quatro .quuts2 .bo6 {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .quasi {
+    width: 100%;
+  }
+  .quasi .quatro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .quasi .quatro .quuts {
+    width: 100%;
+  }
+  .quasi .quatro .quuts .quf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quasi .quatro .quuts .quf .qut1 {
+    width: 293px;
+    height: 381px;
+  }
+  .quasi .quatro .quuts .quf .qut2 {
+    width: 340.75px;
+    height: 380px;
+  }
+  .quasi .quatro .quuts .quf .qut2 .tex2 p {
+    font-size: 12px;
+  }
+  .quasi .quatro .quuts .end {
+    padding-top: 35px;
+  }
+  .quasi .quatro .quuts2 {
+    width: 100%;
+  }
+  .quasi .quatro .quuts2 .bo1 {
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+  .quasi .quatro .quuts2 .bo2 {
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+  .quasi .quatro .quuts2 .bo3 {
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+  .quasi .quatro .quuts2 .bo4 {
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+  .quasi .quatro .quuts2 .bo5 {
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+  .quasi .quatro .quuts2 .bo6 {
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+}
+
 .circle {
   position: fixed;
   border: solid 1.5px #ff3837;
@@ -8754,8 +9334,8 @@
   bottom: 60px;
   right: 50px;
   z-index: 9999999999999999;
-  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
-  transition: background-color .3s,  opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
   opacity: 0;
   text-decoration: none;
   visibility: hidden;

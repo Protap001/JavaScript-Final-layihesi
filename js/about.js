@@ -7,9 +7,24 @@ $('.desings').slick({
     dotsClass: 'car_dot',
     responsive: [
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
                 slidesToScroll: 1,
             }
         }
@@ -52,7 +67,38 @@ $('.boots').slick({
                 infinite: true,
                 dots: true,
                 slidesToScroll: 1,
-                dotsClass: 'car_dot',
+                dotsClass: 'desin_dot',
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                infinite: true,
+                dots: true,
+                slidesToScroll: 1,
+                dotsClass: 'desin_dot',
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                dotsClass: 'desin_dot',
+            }
+        },
+
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                dotsClass: 'desin_dot',
             }
         }
     ]
