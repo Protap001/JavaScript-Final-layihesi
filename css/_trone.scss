@@ -926,15 +926,28 @@
 @media (max-width: 768px) {
   .general-parts-2 {
     .car-2 {
-      margin-top: -150px;
+
+      
       width: 100%;
+      .swiper-button-prev, .swiper-button-next{
+        top: 40%;
+      }
 
       .maximize {
-        top: 470px;
+        display: none;
       }
       .mySwiper2 {
+        height: auto;
         .swiper-slide {
           img {
+            // height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+      #fullscreen-swiper{
+        .swiper-slide{
+          img{
             object-fit: contain;
           }
         }
@@ -943,7 +956,7 @@
         display: none;
       }
       .little-gray {
-        margin-top: -150px;
+        padding: 10px;
         margin-bottom: 30px;
         position: relative;
         .audi-e-trone {
@@ -974,8 +987,8 @@
             // white-space: nowrap;
           }
           p {
-            white-space: nowrap;
-            margin: 0px 20px;
+            white-space: wrap;
+            margin: 0px 15px;
             // width: 25%;
             font-size: 14px;
           }
@@ -994,7 +1007,6 @@
       width: 100%;
 
       .part-2-1 {
-        margin-top: 83%;
         height: 67em;
       }
       .part-3 {
@@ -1014,8 +1026,12 @@
   .general-parts-2 {
     width: 90%;
     margin: auto;
+  
     .car-2 {
       width: 100%;
+      .maximize{
+        display: none;
+      }
     }
     .part-2 {
       width: 100%;

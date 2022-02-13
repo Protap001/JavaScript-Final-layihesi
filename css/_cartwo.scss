@@ -368,6 +368,7 @@
                         height: 100%;
                     }
                     .qut2 {
+                        width: 100%;
                         text-align: center;
                         .tex2 {
                             p {
@@ -426,19 +427,26 @@
                     display: flex;
                   justify-content: center;
                     .qut1 {
-                        width: 255px;
-                        height: 403px;
+                        width: 275px;
+                        height: 253px;
+                        img{
+                            width: 100%;
+                        }
                     }
                     .qut2 {
+                        padding: 15px;
                         width: 338px;
-                        height: 404px;
+                        height: 254px;
                     
                     
                         .tex2 {
+                            margin-bottom: 0;
                             p {
+                                margin-bottom: 10px;
                                 font-size: 12px;
                             }
                         }
+
                     }
                 }
                 .end {
@@ -481,7 +489,8 @@
 @media (min-width: 768px) and (max-width: 1000px) {
     
     .quasi {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         .quatro {
             display: flex;
             flex-wrap: wrap;
@@ -559,12 +568,14 @@
                   justify-content: center;
                     .qut1 {
                         width: 293px;
-                        height: 381px;
+                        height: 301px;
                         
                     }
                     .qut2 {
                         width: 340.75px;
-                        height: 380px;
+                        height: 300px;
+                        padding: 15px !important;
+
                     
                     
                         .tex2 {

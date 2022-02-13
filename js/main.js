@@ -410,7 +410,7 @@ $('.sofer_slider').slick({
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    dotsClass: 'car_dot',
+    dotsClass: 'car_dot sofer_dot',
     responsive: [
         {
             breakpoint: 600,

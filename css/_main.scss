@@ -1,7 +1,4 @@
-
 // --------MAIN 1 START-------
-
-
 
 .text_animate {
     color: transparent;
@@ -88,9 +85,6 @@
         }
     }
 }
-
-
-
 
 #main-slider {
     position: relative;
@@ -404,10 +398,11 @@
     justify-content: center;
     margin-top: 40px;
     &.desin_dot {
-        right: 0;
-        top: -22%;
+        top: -22% !important;
+        left: 90%;
         position: absolute;
     }
+
     li {
         list-style: none;
         button {
@@ -1078,7 +1073,10 @@
             .yazi {
                 margin-left: 30px;
 
-                .timer,.timer-1,.timer-2,.timer-3 {
+                .timer,
+                .timer-1,
+                .timer-2,
+                .timer-3 {
                     color: #fff;
                     font-size: 26px;
                     font-weight: bold;
@@ -1632,7 +1630,6 @@
     }
 }
 .fots {
-    
     margin: 80px 25px;
     display: flex;
     flex-wrap: wrap;
@@ -1692,7 +1689,8 @@
                 transition: opacity 0.33s ease, visibility 0.33s ease, transform 0.33s ease;
             }
 
-            p {display: inline-block;
+            p {
+                display: inline-block;
                 color: #323232;
                 margin: 0px 8px;
                 font-weight: bold;
@@ -2236,25 +2234,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 //   <!-- -------------MAIN 21 END--------- -->
-
-
-
-
-
-
-
-
 
 @media (max-width: 500px) {
     .container {
@@ -2283,7 +2263,164 @@
     }
     .newsa {
         height: 100vh;
-    .desings{.cr-ds{display: none;}}}
+        .desings {
+            .nw-text {
+                margin-bottom: 150px;
+            }
+        }
+    }
+}
+
+@media (max-width: 394px) {
+    .container {
+        .col-6 {
+            width: 100%;
+        }
+        .texts {
+            // display: none;
+            margin-top: -20%;
+            width: 100% !important;
+        }
+    }
+    .carrs {
+        .sales {
+            .one {
+                margin-top: -36px !important;
+            }
+        }
+    }
+    .workers {
+        .quts {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            padding-bottom: 15px;
+        }
+    }
+    .newsa {
+        height: 100vh;
+        .desings {
+            .nw-text {
+                margin-bottom: 150px;
+            }
+        }
+    }
+    .read-more {
+        .boxes {
+            .box1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .desing {
+        .video {
+            margin-top: 25px;
+        }
+   }
+    .dev {
+        .right {
+            display: none !important;
+        }
+    }
+    .conse {
+        .des {
+            img {
+                height: auto;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .manss {
+        .infos {
+            left: 0 !important;
+        }
+    }
+    .teams {
+        height: 115vh;
+    }
+    .questionss {
+        #accordion {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .gallary {
+        margin-top: 120px !important;
+    }
+    .soffers {
+        display: none;
+    }
+    .store {
+        .tuning {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .fots {
+        margin: 80px 55px;
+    }
+    .car_dot {
+        &.desin_dot {
+            left: 80%;
+        }
+    }
+    .nw-text {
+        margin-bottom: 55px !important;
+    }
+    .contactsa {
+        .textss {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around !important;
+
+            .tex3 {
+                width: 100%;
+            }
+        }
+    }
+    .tables {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .on-t {
+            width: 100% !important;
+            margin-bottom: 15px !important;
+        }
+        .on-tt {
+            width: 90% !important;
+            margin: auto !important;
+        }
+    }
+
+    .models {
+        .mas1 {
+            margin: 0% !important;
+            margin-top: 25px !important;
+        }
+    }
+    .contacts {
+        .textss {
+            display: none;
+        }
+    }
+    .mapps {
+        width: 90%;
+        margin: auto;
+        margin-top: 620px;
+    }
+    .forms {
+        .form2 {
+            .company {
+                width: 100% !important;
+                margin-top: 15px;
+            }
+        }
+        .form3 {
+            display: flex;
+        }
+    }
 }
 
 @media (min-width: 500px) and (max-width: 600px) {
@@ -2687,6 +2824,12 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 832px) {
+    .soffers {
+        display: none !important;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
     .container {
         .col-6 {
@@ -2696,6 +2839,16 @@
             // display: none;
             margin-top: -20%;
             width: 100% !important;
+        }
+    }
+    .tables {
+        height: auto !important;
+        font-size: 15px;
+        .on-tt {
+            margin: 15px !important;
+            transform: scale(0) !important;
+            -webkit-transform: none !important;
+            // height: auto !important;
         }
     }
     .container-fluid {
@@ -2860,15 +3013,23 @@
         height: 150px;
     }
     .soffers {
-        display: none;
-        // .sofer_slider {
-        //     display: flex;
-        //     padding: 0;
-        //     flex-wrap: wrap;
-        //     justify-content: center;
-        //     // margin-left: -35%;
-            
-        // }
+        // display: none;
+        .sofer_slider {
+            // display: flex;
+            // padding: 0;
+            margin-left: -15%;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            // margin-left: -35%;
+        }
+    }
+    .car_dot {
+        &.desin_dot {
+            top: -15% !important;
+        }
+        &.sofer_dot {
+            left: 57%;
+        }
     }
     .store {
         .tuning {
@@ -2912,6 +3073,20 @@
         span {
             display: block;
             font-size: 10px !important;
+        }
+    }
+    .infos {
+        margin-top: -15% !important;
+        left: 210px !important;
+    }
+    .man1 {
+        img {
+            left: 150px;
+        }
+        &:hover {
+            .infos {
+                left: 175px !important;
+            }
         }
     }
 }
@@ -3135,6 +3310,52 @@
         span {
             display: block;
             font-size: 10px !important;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1062px) {
+    .nw-text {
+        margin-bottom: 100px !important;
+    }
+    .car_dot {
+        &.desin_dot {
+            top: 90% !important;
+            left: 55% !important;
+        }
+        &.sofer_dot {
+            left: 55%;
+            top: 100%;
+            position: absolute;
+        }
+    }
+}
+
+@media (min-width: 1062px) and (max-width: 1200px) {
+    .nw-text {
+        margin-bottom: 120px !important;
+    }
+    .car_dot {
+        &.desin_dot {
+            top: 90% !important;
+            left: 58% !important;
+        }
+        &.sofer_dot {
+            left: 52%;
+            top: 100%;
+            position: absolute;
+        }
+    }
+    .sofer_slider {
+        margin-left: -4% !important;
+    }
+}
+
+@media (min-width: 618px) and (max-width: 768px) {
+    .fots {
+        margin-left: 15px !important;
+        .fot1 {
+            margin: 50px 5px !important;
         }
     }
 }
